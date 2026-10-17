@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Barrie &mdash; Pequegnat Clocks</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<style>/* Edwardian catalogue style */
+:root{--paper:#f3ead3;--paper2:#eaddc0;--ink:#241a10;--oak:#5a3d22;--brass:#a8842c;--rule:#8a6d3b}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'EB Garamond',serif;margin:0;line-height:1.65;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.55 0 0 0 0 0.45 0 0 0 0 0.32 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+header.masthead{text-align:center;padding:34px 0 10px;border-bottom:3px double var(--rule)}
+header.masthead .over{letter-spacing:.42em;font-size:12px;color:var(--oak);text-transform:uppercase}
+header.masthead h1{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:clamp(30px,5vw,52px);margin:.25em 0;letter-spacing:.06em;color:var(--ink)}
+header.masthead .sub{font-style:italic;color:var(--oak)}
+nav.index{background:var(--paper2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);text-align:center;padding:10px 6px;position:sticky;top:0;z-index:5}
+nav.index a{font-variant:small-caps;letter-spacing:.14em;color:var(--oak);text-decoration:none;margin:0 14px;font-size:15px}
+nav.index a:hover{color:var(--brass)}
+h2.plate-title{font-family:'Playfair Display',Georgia,serif;text-align:center;font-size:clamp(24px,4vw,36px);margin:1.2em 0 .2em;letter-spacing:.05em}
+.rule{display:flex;align-items:center;gap:12px;justify-content:center;color:var(--brass);margin:6px 0 22px}
+.rule:before,.rule:after{content:"";height:1px;background:var(--rule);width:34%}
+p.lede{text-align:center;font-style:italic;color:var(--oak);max-width:640px;margin:0 auto 26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:22px;padding:6px 0 40px}
+.card{background:#faf5e6;border:1px solid var(--rule);padding:10px;text-align:center;text-decoration:none;color:var(--ink);display:block}
+.card:hover{border-color:var(--brass);box-shadow:0 2px 10px rgba(90,61,34,.18)}
+.card img{width:100%;height:210px;object-fit:contain;background:#fffdf4;border:1px solid #d8c89a;display:block}
+.card .nm{font-variant:small-caps;letter-spacing:.1em;margin-top:8px;font-size:16px}
+.card .sp{font-size:12.5px;color:var(--oak);font-style:italic}
+.plate{background:#faf5e6;border:1px solid var(--rule);padding:26px;margin:26px 0 40px}
+.plate img.hero{width:100%;max-height:560px;object-fit:contain;background:#fffdf4;border:1px solid #d8c89a;display:block}
+figcaption{text-align:center;font-variant:small-caps;letter-spacing:.12em;font-size:13px;color:var(--oak);margin-top:8px}
+.spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0;border:1px solid var(--rule);margin:22px 0;background:var(--paper2)}
+.spec div{padding:10px 14px;border-right:1px solid var(--rule)}
+.spec div:last-child{border-right:none}
+.spec .k{font-variant:small-caps;letter-spacing:.14em;font-size:12px;color:var(--oak)}
+.spec .v{font-size:15px}
+.hist p{margin:0 0 1em}
+.hist p:first-of-type::first-letter{font-family:'Playfair Display',Georgia,serif;font-size:3.1em;float:left;line-height:.9;padding:4px 8px 0 0;color:var(--oak)}
+.sources{font-size:13px;color:var(--oak);border-top:1px solid var(--rule);margin-top:26px;padding-top:10px}
+.sources a{color:var(--oak)}
+.pagenav{display:flex;justify-content:space-between;margin:0 0 40px;font-variant:small-caps;letter-spacing:.1em}
+.pagenav a{color:var(--oak);text-decoration:none}
+.pagenav a:hover{color:var(--brass)}
+.notice{border:1px dashed var(--rule);padding:26px;text-align:center;font-style:italic;color:var(--oak);background:#fffdf4;margin:22px 0}
+footer{border-top:3px double var(--rule);margin-top:30px;padding:20px 0 40px;text-align:center;font-size:13px;color:var(--oak)}
+footer .fleur{color:var(--brass)}
+.hero-home{width:100%;max-height:420px;object-fit:cover;border:1px solid var(--rule);display:block;margin:22px 0}
+.catcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin:26px 0 40px}
+.catcards a{background:#faf5e6;border:1px solid var(--rule);padding:26px 18px;text-align:center;text-decoration:none;color:var(--ink)}
+.catcards a:hover{border-color:var(--brass)}
+.catcards .t{font-family:'Playfair Display',Georgia,serif;font-size:22px;letter-spacing:.04em}
+.catcards .n{font-variant:small-caps;letter-spacing:.14em;color:var(--oak);font-size:13px;margin-top:6px}
+@media(max-width:640px){.spec div{border-right:none;border-bottom:1px solid var(--rule)}}
+</style></head>
+<body><div class="wrap">
+<header class="masthead"><div class="over">Berlin &middot; Kitchener, Ontario &middot; 1904&ndash;1941</div>
+<h1>Pequegnat Clocks</h1><div class="sub">A catalogue of the Arthur Pequegnat Clock Company</div></header>
+</div><nav class="index"><a href="index.html">Home</a><a href="shelf.html">Shelf Clocks</a><a href="wall.html">Wall Clocks</a><a href="hall.html">Hall Clocks</a></nav><div class="wrap"><h2 class="plate-title">Barrie</h2><div class="rule">❦</div>
+<div class="plate"><img class="hero" src="../images/mantel-barrie.jpg" alt="Pequegnat Barrie clock"><figcaption>Plate &middot; Barrie</figcaption><div class="spec"><div><div class="k">Wood</div><div class="v">Quarter-sawn oak.</div></div><div><div class="k">Movement</div><div class="v">8-day time and strike; gong for hours, cup bell for half hours.</div></div><div><div class="k">Dimensions</div><div class="v">10.75 H x 13.75 W x 7.25 D in.</div></div></div><div class="hist"><p>4.75 in dial with pie-crust bezel; WWI-era examples used composite trim during metal shortages; 1904 supplement, 1913 and 1918 catalogues.</p></div><div class="sources">Sources: <a href="https://skipkerr.com/pequegnat-clocks/pequegnat-mantel-clocks/pezuegnat-mantel-clocksa-to-e/">[1]</a> <a href="http://www.clockprices.com/pequegnat-barrie-shelf-clock.html">[2]</a></div></div>
+<div class="pagenav"><a href="shelf-amherst.html">&larr; Amherst</a><a href="../shelf.html">Index</a><a href="shelf-beauty.html">Beauty &rarr;</a></div></div><footer><div class="wrap"><span class="fleur">❦</span><br>
+A catalogue of the clocks of the Arthur Pequegnat Clock Company, Berlin&thinsp;/&thinsp;Kitchener, Ontario, 1904&ndash;1941.<br>
+Photographs: The Canadian Clock Museum &middot; auction photographs via clockprices.com / Miller &amp; Miller Auctions &middot; Skip Kerr &middot; Quebec photograph supplied for this catalogue.<br>
+<span class="fleur">❦</span></div></footer></body></html>
